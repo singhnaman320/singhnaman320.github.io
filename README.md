@@ -1,4 +1,4 @@
-# singhnaman320.github.io
+
 
 <h1 align="center">Hi 👋, I'm Naman Kumar Singh</h1>
 <h3 align="center">Currently Learning Full-Stack Web Development at Masai School</h3>
