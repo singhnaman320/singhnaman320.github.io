@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Naman Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/71a9c32d59.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    Adding HTML based portfolio here
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="none" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Java Backend Developer</p>
+                <h1>Hi, I'm <span> Naman Kumar Singh</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myimage.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Aspiring Java Backend Developer with more than 1000+ hours of deliberate practice, Contributed to multiple groups and solo projects and can write clean and optimized code. To secure a responsible career opportunity to fully utilize the training and skills, while making a significant contribution to the growth of Organization.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('techskills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('addskills')">Additional Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="techskills">
+                        <ul>
+                                <li><i class="fa-brands fa-java"></i><span>Java</span> </li>
+                                <li><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
+                                <li><i class="fa-brands fa-html5"></i><span>Html</span></li>
+                                <li><i class="fa-brands fa-css3-alt"></i><span>Css</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Nov. 2018 - Feb. 2021</span><br>Maintenance Engineer at Wizcure Pharmaa. Pvt Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Full Stack Web Development 2022</span><br>Masai School</li>
+                            <li><span>Bachlor's Of Engineering in Mechanical 2014-2018</span><br>Graphic Era Deemed to be University</li>
+                            <li><span>12th Standard 2016-2017</span><br>St. Xavier's Senior Secondary School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="addskills">
+                        <ul>
+                            <li><span>Problem Solving</span></li>
+                            <li><span>Time Management</span></li>
+                            <li><span>Remote work and Collaboration</span></li>
+                            <li><span>Strong creative ability</span></li>
+                            <li><span>Communication skills</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="github">
+        <h1 class="sub-title">GitHub Record</h1>
+        <img src="images/Github.png" id="gitrec">    
+        <div class="calendar"></div>
+    </div>
 </body>
+    <script src="./main.js"></script>
+    
 </html>
