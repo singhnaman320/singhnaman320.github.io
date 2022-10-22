@@ -4,87 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naman Portfolio</title>
+    <title>Naman_Singh_Portfolio</title>
     <link rel="stylesheet" href="./style.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/71a9c32d59.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" alt="none" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                <h1 class="logo"><span style="color:#ff004f">N</span>AMAN</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#github">Github</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
+           
             <div class="header-text">
                 <p>Java Backend Developer</p>
-                <h1>Hi, I'm <span> Naman Kumar Singh</span><br> from India</h1>
+                <div id="type_div">
+                <h1>Hi, I'm <span class="typing">Naman Kumar Singh</span><br> From India</h1>
+            </div>
+                <a href="images/Naman_Singh_Resume.pdf" class="btn" download >Resume</a>
+            </div>
+            
             </div>
         </div>
     </div>
-    <!-- About -->
+
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/myimage.png" alt="">
+                    <img src="images/myimage.png" >
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Aspiring Java Backend Developer with more than 1000+ hours of deliberate practice, Contributed to multiple groups and solo projects and can write clean and optimized code. To secure a responsible career opportunity to fully utilize the training and skills, while making a significant contribution to the growth of Organization.</p>
+                    <p>Aspiring Java Backend Developer with more than 1000+ hours of deliberate practice, Contributed to multiple groups and solo projects and can write clean and optimized code. To secure a responsible career opportunity to fully utilize the training and skills, while making a significant contribution to the growth of Organization. </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('techskills')">Technical Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('addskills')">Additional Skills</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="techskills">
-                        <ul>
+                         <div class="details">
+                            <p class="skill-ed active" onclick="opentab('Technical')">Technical Skills</p>
+                            <p class="skill-ed" onclick="opentab('Skills')">Soft Skills</p>
+                            <p class="skill-ed" onclick="opentab('experience')">Experience</p>
+                            <p class="skill-ed" onclick="opentab('Education')">Education</p>
+                         </div>
+                        <div class="contents active-tab" id="Technical">
+                            <ul>
                                 <li><i class="fa-brands fa-java"></i><span>Java</span> </li>
+                                <li><i class="fa-brands fa-hire-a-helper"></i><span>Hibernate</span> </li>
+                                <li><i class="fa-solid fa-database"></i><span>MYSQL</span> </li>
                                 <li><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
+                                <li><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
                                 <li><i class="fa-brands fa-html5"></i><span>Html</span></li>
-                                <li><i class="fa-brands fa-css3-alt"></i><span>Css</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
+                            </ul>
+                        </div>
+                        <div class="contents" id="Skills">
+                            <ul>
+                                <li><span>Problem Solving</span></li>
+                                <li><span>Time Management</span></li>
+                                <li><span>Remote work and Collaboration</span></li>
+                                <li><span>Communication Skills</span></li>
+                                <li><span>Strong Creative Ability</span></li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="experience">
                         <ul>
                             <li><span>Nov. 2018 - Feb. 2021</span><br>Maintenance Engineer at Wizcure Pharmaa. Pvt Ltd.</li>
                         </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Full Stack Web Development 2022</span><br>Masai School</li>
-                            <li><span>Bachlor's Of Engineering in Mechanical 2014-2018</span><br>Graphic Era Deemed to be University</li>
-                            <li><span>12th Standard 2016-2017</span><br>St. Xavier's Senior Secondary School</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="addskills">
-                        <ul>
-                            <li><span>Problem Solving</span></li>
-                            <li><span>Time Management</span></li>
-                            <li><span>Remote work and Collaboration</span></li>
-                            <li><span>Strong creative ability</span></li>
-                            <li><span>Communication skills</span></li>
-                        </ul>
-                    </div>
+                        </div>
+                         <div class="contents" id="Education">
+                            <ul>
+                                <li><span>Full Stack Web Development 2022</span><br>Masai School</li>
+                                <li><span>Bachelor's Of Engineering in Mechanical 2014-2018</span><br>Graphic Era Deemed to be University</li>
+                                <li><span>12th Standard 2013-2014</span><br>St. Xavier's Senior Secondary School</li>
+                            </ul>
+                         </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container" id="github">
-        <h1 class="sub-title">GitHub Record</h1>
-        <img src="images/Github.png" id="gitrec">    
-        <div class="calendar"></div>
+    <div class="container git" id="github">
+        <h1 class="sub-title">GitHub Calendar</h1>
+        
+        <img src="https://github-readme-stats.vercel.app/api?username=singhnaman320&show_icons=true&locale=en" id="exp">
+         
+    <div class="calendar">
+        <!-- Github Calender for you. -->
+      </div>
     </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="images/rodanfields.png">
+                    <div class="layer">
+                        <h3>Rodan And Fields_Clone</h3>
+                        <p> Tech Stacks: <i class="fa-brands fa-html5"></i> HTML , <i class="fa-brands fa-css3-alt"></i> CSS , <i class="fa-brands fa-js"></i> JAVASCRIPT<br> A multi-national beauty product brand.</p>
+                        <div>
+                        <a href="https://github.com/brajesh623/rodanandfields.com-clone-" target="_blank">Github</a>
+                        <a href="https://regal-haupia-5fba94.netlify.app/index.html" target="_blank">Live</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ssense.png">
+                    <div class="layer">
+                        <h3>Ssense_Clone</h3>
+                        <p> Tech Stack: <i class="fa-brands fa-html5"></i> HTML , <i class="fa-brands fa-css3-alt"></i> CSS , <i class="fa-brands fa-js"></i> JAVASCRIPT<br> A multi-brand retailer specializing in the sale of designer fashion and high-end streetwear.</p>
+                        <div>
+                            <a href="https://github.com/AnasQu7/innate-partner-2755" target="_blank">Github</a>
+                            <a href="https://lovely-croquembouche-60cfde.netlify.app/" target="_blank">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/sms.png">
+                    <div class="layer">
+                        <h3>Student Management System_Clone</h3>
+                        <p> Tech Stack: <i class="fa-brands fa-html5"></i> HTML , <i class="fa-brands fa-css3-alt"></i> CSS , <i class="fa-brands fa-js"></i> JAVASCRIPT<br> A similar interface to Masai with functionality like adding and removing students, lectures, and assignments.</p>
+                        <div>
+                        <a href="https://github.com/masai-course/Naman_fw19_0458/tree/master/unit-3/sprint-3/day-3/you/Student%20Management" target="_blank">Github</a>
+                        <a href="https://admirable-sunflower-8c5d0c.netlify.app/" target="_blank">Live</a>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>singhnaman320@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91-7017225589</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/naman-kumar-singh-38a669167/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/singhnaman320" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder=" Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message  (contact me is still in continuation........Not fully completed.) "></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid far fa-copyright"></i> Naman. Made by Naman Kumar Singh</p> 
+        </div>
+    </div>
+
 </body>
-    <script src="./main.js"></script>
-    
 </html>
+
+<script src="./main.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".calendar", "singhnaman320", { responsive: true });
+</script>

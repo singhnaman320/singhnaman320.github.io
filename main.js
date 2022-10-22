@@ -1,14 +1,40 @@
-let tablinks= document.getElementsByClassName("tab-links");
-let tabcontents= document.getElementsByClassName("tab-contents");
+let details=document.getElementsByClassName("skill-ed");
+let content=document.getElementsByClassName("contents");
 
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
+opentab=(name)=>{
+    for(detail of details){
+        detail.classList.remove("active");
     }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
+    for(con of content){
+        con.classList.remove("active-tab");
     }
-
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
+    event.currentTarget.classList.add("active");
+    document.getElementById(name).classList.add("active-tab");
 }
+
+
+let sidemenu=document.getElementById("sidemenu");
+
+openmenu=()=>{
+sidemenu.style.right="0";
+}
+
+closemenu=()=>{
+    sidemenu.style.right="-200px";
+}
+
+//   const scriptURL = ''
+//   const form = document.forms['submit-to-google-sheet']
+//   const msg=document.getElementById("msg");
+//   form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//       .then(response => {
+//         msg.innerHTML="Message Sent Successfully";
+//         setTimeout(()=>{
+//             msg.innerHTML="";
+//         },5000);
+//         form.reset();
+//     })
+//       .catch(error => console.error('Error!', error.message))
+//   })
