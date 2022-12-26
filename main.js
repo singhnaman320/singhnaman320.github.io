@@ -38,3 +38,17 @@ closemenu=()=>{
     })
       .catch(error => console.error('Error!', error.message))
   })
+
+    document.getElementById("res").addEventListener("click",resume_fun);
+    function resume_fun() {
+    //window.location.href = "https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=share_link";
+    window.open("https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=sharing", '_blank');
+
+    }
+
+    document.getElementById("res1").addEventListener("click",resume1_fun);
+    function resume1_fun() {
+    //window.location.href = "https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=share_link";
+    window.open("https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=sharing", '_blank');
+    
+    }

@@ -100,6 +100,7 @@ nav ul li a:hover::after{
     padding: 10px 20px;
     margin-bottom: 25px;
     border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .btn:hover{
     background-color: #ff004f;
@@ -109,9 +110,9 @@ nav ul li a:hover::after{
 /* About */
 
 #about{
-padding:60px 0px;
-color: #ababab;
-background-color: #0f2c33;
+    padding:60px 0px;
+    color: #ababab;
+    background-color: #0f2c33;
 }
 .row{
     display: flex;
@@ -124,6 +125,7 @@ background-color: #0f2c33;
 .about-col-1 img{
     width:100%;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .about-col-2{
@@ -214,13 +216,14 @@ font-size: 20px;
     display: grid;
     grid-template-columns: 65% 35%;
     border-radius: 10px;
-    border: 3px solid #b54769 ;
-    background-color: #0f2c33;
+    border: 5px solid #b54769 ;
+    background-color: #fff;
     padding: 20px;
-  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #0f2c33;
 }
 .work:hover{
-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .work img{
@@ -245,6 +248,7 @@ transform: scale(1.05);
     background: white;
     padding: 5px 10px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .layer a:hover{
     background-color: #ff004f;
@@ -306,6 +310,7 @@ form input,form textarea{
     color: black;
     font-size: 18px;
     border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .btn2{
     display: inline-block;
@@ -317,6 +322,7 @@ form input,form textarea{
     margin-bottom: 10px;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .copyright{
@@ -578,6 +584,7 @@ nav ul .fas{
       margin: auto;
       padding:1%;
       margin-top: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .git{
     background-color: #0f2c33;
