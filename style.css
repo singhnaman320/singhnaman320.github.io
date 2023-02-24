@@ -124,6 +124,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width:100%;
+    /* height: 100%; */
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -187,6 +188,51 @@ font-size: 20px;
     display:block ;
 }
 
+/* Skills */
+
+#Skills{
+    width: 100%;
+    background-color: #0f2c33;
+}
+
+#skill_container{
+   width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    /* border: 1px solid red; */
+}
+#skill_container div{
+    height: 100%;
+    /* width: 100%; */
+    border: 2px solid #ff004f;
+   /* padding: 10px; */
+   text-align: center;
+   background-color: #0f2c33;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 10px;
+   
+}
+#skill_container div:hover{
+    
+transform: scale(1.1);
+    border: 2px solid white;
+}
+#skill_container div h2{
+    /* width: 100%; */
+    margin-top: 20px;
+}
+#skill_container img{
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
 /* Experience */
 
 #exp{
@@ -216,7 +262,7 @@ font-size: 20px;
     display: grid;
     grid-template-columns: 65% 35%;
     border-radius: 10px;
-    border: 5px solid #b54769 ;
+    border: 2px solid #ff004f ;
     background-color: #fff;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -337,8 +383,6 @@ form input,form textarea{
 .copyright i{
     color: black;
 }
-
-
 
 nav .fas{
     display: none;

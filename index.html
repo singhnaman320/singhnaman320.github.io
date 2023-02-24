@@ -18,7 +18,7 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#skill_container">Skills</a></li>
                     <li><a href="#github">Github</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -44,19 +44,19 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/myimage.png" >
+                    <img src="images/Naman.png" >
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>Aspiring Java Backend Developer with more than 1000+ hours of deliberate practice, Contributed to multiple groups and solo projects and can write clean and optimized code. To secure a responsible career opportunity to fully utilize the training and skills, while making a significant contribution to the growth of Organization. </p>
 
                          <div class="details">
-                            <p class="skill-ed active" onclick="opentab('Technical')">Technical Skills</p>
-                            <p class="skill-ed" onclick="opentab('Skills')">Soft Skills</p>
+                            <!-- <p class="skill-ed active" onclick="opentab('Technical')">Technical Skills</p> -->
+                            <p class="skill-ed active" onclick="opentab('Skills')">Soft Skills</p>
                             <p class="skill-ed" onclick="opentab('experience')">Experience</p>
                             <p class="skill-ed" onclick="opentab('Education')">Education</p>
                          </div>
-                        <div class="contents active-tab" id="Technical">
+                        <!-- <div class="contents active-tab" id="Technical">
                             <ul>
                                 <li><i class="fa-brands fa-java"></i><span>Java</span> </li>
                                 <li><i class="fa-brands fa-hire-a-helper"></i><span>Hibernate</span> </li>
@@ -65,8 +65,8 @@
                                 <li><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
                                 <li><i class="fa-brands fa-html5"></i><span>Html</span></li>
                             </ul>
-                        </div>
-                        <div class="contents" id="Skills">
+                        </div> -->
+                        <div class="contents active-tab" id="Skills">
                             <ul>
                                 <li><span>Problem Solving</span></li>
                                 <li><span>Time Management</span></li>
@@ -92,6 +92,11 @@
         </div>
     </div>
 
+    <!-- Technical skills -->
+    <div id="Skills" class="container">
+        <h1 class="sub-title">Technical Skills</h1>
+        <div id="skill_container" ></div>
+    </div>
     
     <div class="container git">
         <div>
