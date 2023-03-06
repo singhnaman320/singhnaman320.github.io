@@ -72,7 +72,7 @@ closemenu=()=>{
       "./images/html.png",
       "./images/css.png",
       "./images/aws.png",
-      "./images/Github.png",
+      "./images/railway.png",
       "./images/netlify.png"
   ];
   let skill_name=[
@@ -84,7 +84,7 @@ closemenu=()=>{
       "HTML",
       "CSS",
       "AWS",
-      "GitHub",
+      "Railway",
       "Netlify"
   ]
   let count=0;
