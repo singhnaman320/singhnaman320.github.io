@@ -188,9 +188,9 @@ font-size: 20px;
     display:block ;
 }
 
-/* Skills */
+/* skills */
 
-#Skills{
+#skills{
     width: 100%;
     background-color: #0f2c33;
 }
@@ -233,19 +233,41 @@ transform: scale(1.1);
     border-radius: 30px;
 }
 
-/* Experience */
+/* GitHub Stats */
 
-#exp{
-    border-radius: 5px;
-    width:65%;
-    margin-top: 10px;
+.statistics_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    padding: 5px;
+    /* border: 2px solid green; */
+}
+#github-streak-stats{
+    width: 109%;
+    /* width: 62vh; */
+    height:100%;
+    margin-left: 5%;
+    border-radius: 3px;
+}
+#github-stats-card{
+    width: 104%;
+    /* width: 57vh; */
+    height: 100%;
+    border-radius: 3px;
+}
+#github-top-langs{
+    width: 114%;
+    /* width: 44vh; */
+    height: 74%;
+    border-radius: 3px;
 }
 
-/* Portfolio-------- */
+/* projects-------- */
 
-
-
-#portfolio{
+#projects{
     padding: 50px 0px;
     background-color: #0f2c33;
 
@@ -258,7 +280,7 @@ transform: scale(1.1);
     margin-top: 50px;
 
 }
-.work{
+.project-card{
     display: grid;
     grid-template-columns: 65% 35%;
     border-radius: 10px;
@@ -268,11 +290,11 @@ transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: #0f2c33;
 }
-.work:hover{
+.project-card:hover{
     transform: scale(1.05);
 }
 
-.work img{
+.project-card img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -458,7 +480,7 @@ nav ul .fas{
     margin-right: 20px;
 }
 
-/* Skills */
+/* skills */
 
 #skill_container{
     grid-template-columns: repeat(2,1fr);
@@ -470,7 +492,26 @@ nav ul .fas{
     font-size: 18px;
 }
 
-/* Portfolio projects */
+/* GitHub Stats */
+
+.statistics_container {
+    grid-template-columns: repeat(1,1fr);
+}
+#github-streak-stats{
+    width: 100%;
+    height:100%;
+    margin-left: 0%;
+}
+#github-stats-card{
+    width: 100%;
+    height: 100%;
+}
+#github-top-langs{
+    width: 100%;
+    height: 100%;
+}
+
+/* portfolio projects */
 
 .project-list{
     grid-template-columns: repeat(1,1fr);
@@ -495,7 +536,7 @@ nav ul .fas{
 }
 
 
-.work{
+.project-card{
     grid-template-columns: repeat(1,1fr);   
    
    }
@@ -571,7 +612,7 @@ nav ul .fas{
     grid-template-columns: repeat(3,1fr);
 }
 
-.work{
+.project-card{
  grid-template-columns: repeat(1,1fr);   
 
 }
@@ -579,48 +620,73 @@ nav ul .fas{
     padding: 0px;
 }
 
+/* GitHub Stats */
+
+.statistics_container {
+    grid-template-columns: repeat(2,1fr);
 }
+#github-streak-stats{
+    width: 105%;
+    height:100%;
+    margin-left: 0%;
+}
+#github-stats-card{
+    width: 100%;
+    height: 100%;
+}
+#github-top-langs{
+    width: 100%;
+    height: 100%;
+}
+
+}
+
+/* =-=-=-==-=-=-=-=-==-=--=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-===-=-=---=-=-=-=-====-=-==--=-=--=-=-=-=-=-=-=-=-=--=-=--=- */
+
 #msg{
     color: #61b752;
     margin-top: -10px;
     display: block;
 }
 
+/* =-=-=-==-=-=-=-=-==-=--=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-===-=-=---=-=-=-=-====-=-==--=-=--=-=-=-=-=-=-=-=-=--=-=--=- */
+
+
 /* Github */
 
 :root {
-    --color-calendar-graph-day-bg: #dddbdb;
-    --color-calendar-graph-day-L1-bg: #39dd34;
-    --color-calendar-graph-day-L2-bg: #45a045;
-    --color-calendar-graph-day-L3-bg: #047526;
-    --color-calendar-graph-day-L4-bg: #0a4208;
+    --color-react-activity-calendar-graph-day-bg: #dddbdb;
+    --color-react-activity-calendar-graph-day-L1-bg: #39dd34;
+    --color-react-activity-calendar-graph-day-L2-bg: #45a045;
+    --color-react-activity-calendar-graph-day-L3-bg: #047526;
+    --color-react-activity-calendar-graph-day-L4-bg: #0a4208;
   }
   
   rect.ContributionCalendar-day[data-level='0'] {
-      fill: var(--color-calendar-graph-day-bg);
+      fill: var(--color-react-activity-calendar-graph-day-bg);
   }
   
   rect.ContributionCalendar-day[data-level='1'] {
-      fill: var(--color-calendar-graph-day-L1-bg);
+      fill: var(--color-react-activity-calendar-graph-day-L1-bg);
   }
   
   rect.ContributionCalendar-day[data-level='2'] {
-      fill: var(--color-calendar-graph-day-L2-bg);
+      fill: var(--color-react-activity-calendar-graph-day-L2-bg);
   }
   
   rect.ContributionCalendar-day[data-level='3'] {
-      fill: var(--color-calendar-graph-day-L3-bg);
+      fill: var(--color-react-activity-calendar-graph-day-L3-bg);
   }
   
   rect.ContributionCalendar-day[data-level='4'] {
-      fill: var(--color-calendar-graph-day-L4-bg);
+      fill: var(--color-react-activity-calendar-graph-day-L4-bg);
   }
   
-  .calendar .width-full > .float-left {
+  .react-activity-calendar .width-full > .float-left {
       display: none;
   }
   
-  .calendar {
+  .react-activity-calendar {
       width:100%;
       border: 1px solid #DDDDDD;
       border-radius: 3px;
@@ -633,8 +699,8 @@ nav ul .fas{
   .git{
     background-color: #0f2c33;
   }
-  .calendar-graph text.wday,
-  .calendar-graph text.month {
+  .react-activity-calendar-graph text.wday,
+  .react-activity-calendar-graph text.month {
       font-size: 10px;
       fill: #aaa;
   }
@@ -666,7 +732,7 @@ nav ul .fas{
       color: #767676;
   }
   
-  .calendar-graph {
+  .react-activity-calendar-graph {
       padding: 5px 0 0;
       text-align: center;
   }
@@ -699,7 +765,7 @@ nav ul .fas{
       color: #333;
   }
   
-  .calendar img.spinner {
+  .react-activity-calendar img.spinner {
       width: 70px;
       margin-top: 50px;
       min-height: 70px;
