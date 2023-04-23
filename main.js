@@ -92,12 +92,18 @@ closemenu=()=>{
   container.innerHTML=null;
       arr.forEach((ele)=>{
           let div= document.createElement("div");
+         
           let img=document.createElement("img");
+          div.setAttribute("class", "skills-card-img");
           img.src=ele;
+
           let name=document.createElement("h2");
+          name.setAttribute("class", "skills-card-name")
           name.innerText=skill_name[count];
           name.style.color="white";
+
           count++;
+          
           div.append(img,name);
           container.append(div);
       })
