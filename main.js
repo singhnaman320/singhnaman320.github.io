@@ -41,17 +41,17 @@ closemenu=()=>{
 
     document.getElementById("resume-button-1").addEventListener("click",resume_fun);
     function resume_fun() {
-    //window.location.href = "https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=share_link";
-    window.open("https://1drv.ms/b/s!AjVEmfDOaqo9hiFqnTQmr9w8u1rb?e=3yeSZ7", '_blank');
+
+        //window.location.href = "https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=share_link";
+        window.open("https://1drv.ms/b/s!AjVEmfDOaqo9hiFqnTQmr9w8u1rb?e=3yeSZ7", '_blank');
 
     }
 
     document.getElementById("resume-button-2").addEventListener("click",resume1_fun);
     function resume1_fun() {
-    //window.location.href = "https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=share_link";
-    //window.open("https://1drv.ms/b/s!AjVEmfDOaqo9hiFqnTQmr9w8u1rb?e=3yeSZ7", '_blank');
 
-    resume_fun();
+        //window.location.href = "https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=share_link";
+        window.open("https://1drv.ms/b/s!AjVEmfDOaqo9hiFqnTQmr9w8u1rb?e=3yeSZ7", '_blank');
     
     }
 
