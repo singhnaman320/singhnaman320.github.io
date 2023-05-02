@@ -42,8 +42,8 @@ closemenu=()=>{
 
     //==============================================================================================================================
 
-    let resume1 = document.getElementById("resume-link-1").addEventListener("click",opendrive);
-    let resume2 = document.getElementById("resume-link-2").addEventListener("click",opendrive);
+    let resume1 = document.getElementById("resume-button-1").addEventListener("click",opendrive);
+    let resume2 = document.getElementById("resume-button-2").addEventListener("click",opendrive);
 
     function opendrive(){
         window.open(
