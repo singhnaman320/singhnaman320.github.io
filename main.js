@@ -48,7 +48,7 @@ closemenu=()=>{
     function opendrive(){
         window.open(
           (href =
-            "https://1drv.ms/b/s!AjVEmfDOaqo9hiFqnTQmr9w8u1rb?e=3yeSZ7")
+            "https://drive.google.com/file/d/1_kuCzH24NVL_wiE3UkilIi1mXk2Y0Yw2/view?usp=share_link")
         );
        }
       
