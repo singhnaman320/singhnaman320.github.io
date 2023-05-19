@@ -91,7 +91,11 @@ closemenu=()=>{
       "./images/css.png",
       "./images/aws.png",
       "./images/railway.png",
-      "./images/netlify.png"
+      "./images/netlify.png",
+      "./images/jUnit.png",
+      "./images/mockito.png",
+      "./images/microservices.png",
+      "./images/mssql.png"
   ];
   let skill_name=[
       "Java",
@@ -103,7 +107,11 @@ closemenu=()=>{
       "CSS",
       "AWS",
       "Railway",
-      "Netlify"
+      "Netlify",
+      "JUnit",
+      "Mockito",
+      "Microservices",
+      "MS SQL Server"
   ]
   let count=0;
   AppendSkills=(arr)=>{
