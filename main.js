@@ -95,7 +95,8 @@ closemenu=()=>{
       "./images/jUnit.png",
       "./images/mockito.png",
       "./images/microservices.png",
-      "./images/mssql.png"
+      "./images/mssql.png",
+      "./images/kafka.png"
   ];
   let skill_name=[
       "Java",
@@ -111,7 +112,8 @@ closemenu=()=>{
       "JUnit",
       "Mockito",
       "Microservices",
-      "MS SQL Server"
+      "MS SQL Server",
+      "Apache Kafka"
   ]
   let count=0;
   AppendSkills=(arr)=>{
