@@ -97,7 +97,7 @@ closemenu=()=>{
       "./images/microservices.png",
       "./images/mssql.png",
       "./images/kafka.png",
-      "./images/reactjs.png",
+      "./images/ReactJS.png",
       "./images/mongo.png"
   ];
   let skill_name=[
